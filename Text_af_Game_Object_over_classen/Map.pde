@@ -3,9 +3,16 @@ GameObject player = new Tank();
 
   ArrayList<GameObject> list = new ArrayList<GameObject>();
 
+
+
+
+ 
+
 void setup(){
-  size(500,500);
-  
+ 
+ size(500,500);
+ 
+ 
   player.pos.set(100,100);
   player.vel.set(1,1);
   wall.pos.set(200,200);

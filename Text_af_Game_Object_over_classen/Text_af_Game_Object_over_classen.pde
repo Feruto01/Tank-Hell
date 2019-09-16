@@ -18,10 +18,8 @@ class GameObject{
   void update(){
     pos.add(vel);
     
-    if (player.add(wall)) >= distance(player.add(wall)){
-      vel.x *= -1;
-      vel.y *= -1;
+  //  if (collisionRadius+collisionRadius) <= distance(player.add(wall){
+  //    vel.x *= -1;
+  //    vel.y *= -1;
     }
   }
-
-}
