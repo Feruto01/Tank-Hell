@@ -9,17 +9,20 @@ class GameObject{
   PVector pos = new PVector();
   PVector vel = new PVector();
   
-  float collisionRadius = 10;
+  float collisionRadius = 5;
   
   void display(){
-   ellipse(pos.x,pos.y,collisionRadius,collisionRadius);
+   ellipse(pos.x,pos.y,2*collisionRadius,2*collisionRadius);
   }
   
   void update(){
     pos.add(vel);
-    
-  //  if (collisionRadius+collisionRadius) <= distance(player.add(wall){
-  //    vel.x *= -1;
-  //    vel.y *= -1;
-    }
+  
+   
+   if (dist(player.pos.x,player.pos.y,wall.pos.x,wall.pos.y)<=collisionRadius+collisionRadius){
+      vel.x *= -1;
+      vel.y *= -1;
+    }    
+
   }
+}

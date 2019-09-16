@@ -5,12 +5,14 @@ GameObject player = new Tank();
 
 
 
-
+public void settings() {
+  size(500, 500);
+}
  
 
 void setup(){
  
- size(500,500);
+// size(500,500);
  
  
   player.pos.set(100,100);
@@ -27,5 +29,7 @@ void draw(){
   for(GameObject g: list){
     g.display();
     g.update();
-  }
+    
+    
+   }
 }
