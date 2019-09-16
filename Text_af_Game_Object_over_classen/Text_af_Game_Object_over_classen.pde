@@ -1,9 +1,10 @@
-new class = Game object (){
+//class Game_object {
 
-  new PVector = PVector velocity ()
+//PVector velocity = new PVector ();
+//PVector location = new PVector ();
   
   
-  void display()
-  void update()
-  println("1")
-}
+//  void display();
+//  void update();
+  
+//}
