@@ -5,5 +5,5 @@ new class = Game object (){
   
   void display()
   void update()
-  
+  println("1")
 }
