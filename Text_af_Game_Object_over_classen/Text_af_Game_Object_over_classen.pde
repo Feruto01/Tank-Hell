@@ -1,10 +1,27 @@
-class Game_object {
 
-PVector velocity = new PVector ();
-PVector location = new PVector ();
+
+
+
+
+
+
+class GameObject{
+  PVector pos = new PVector();
+  PVector vel = new PVector();
   
+  float collisionRadius = 10;
   
-  void display();
-  void update();
+  void display(){
+   ellipse(pos.x,pos.y,collisionRadius,collisionRadius);
+  }
   
+  void update(){
+    pos.add(vel);
+    
+    if (player.add(wall)) >= distance(player.add(wall)){
+      vel.x *= -1;
+      vel.y *= -1;
+    }
+  }
+
 }
