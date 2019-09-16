@@ -1,10 +1,10 @@
-//class Game_object {
+class Game_object {
 
-//PVector velocity = new PVector ();
-//PVector location = new PVector ();
+PVector velocity = new PVector ();
+PVector location = new PVector ();
   
   
-//  void display();
-//  void update();
+  void display();
+  void update();
   
-//}
+}
