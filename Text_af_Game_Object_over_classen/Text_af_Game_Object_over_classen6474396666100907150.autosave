@@ -1,0 +1,12 @@
+class GameObject {
+  
+  PVector velocity;
+  PVector location;
+
+
+  void display() {
+  }
+
+  void update() {
+  }
+}
