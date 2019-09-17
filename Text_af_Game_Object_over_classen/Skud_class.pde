@@ -17,27 +17,24 @@ PVector vel = new PVector(6,6);
 
     }
   }
+  
+  
   void display() {
     
      if (keyPressed)
     {
       if (key == 'f' || key == 'F'){
-        
+     
         fill(255);
         ellipse(player.pos.x, player.pos.y, collisionRadius/2, collisionRadius/2);
+        
       }
- /*    pushMatrix();
-    translate (player.pos.x, player. pos. y);
-    pos.add(vel);
-    rotate(angle);
+     
 
-    rect(0  ,0  ,15,15);
-    rect(0  ,0  ,15,15);
-    popMatrix();*/
-   
-   
-      
+
+         
     }
- 
+    
   }
 }
+ 

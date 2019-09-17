@@ -38,7 +38,7 @@ class GameObject {
    }
    
      if (g2.pos.y< 0){
-     g2.vel.y = 0;
+     g2.vel.y = 1;
      g2.pos.y = 1;
    }
    

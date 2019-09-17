@@ -1,6 +1,6 @@
 class Wall extends GameObject {
   
-  PVector pos = new PVector ();
+ 
   void display(){
   
   pos.x = (400);
