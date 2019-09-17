@@ -1,2 +1,2 @@
-class Wall extends GameObject{
+class Wall extends GameObject {
 }

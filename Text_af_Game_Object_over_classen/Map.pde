@@ -26,5 +26,5 @@ void draw() {
   for (GameObject g : list) {
     g.display();
     g.update();
-}
+  }
 }
