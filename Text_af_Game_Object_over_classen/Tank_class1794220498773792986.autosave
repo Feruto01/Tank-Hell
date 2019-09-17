@@ -1,13 +1,6 @@
 class Tank extends GameObject {
 
   void display() {
-    pushMatrix();
-    translate(player.pos.x,player.pos.y);
-        rotate(angle);
-
-    rect(0 - 15 ,0 - 15 ,30,30);
-    rect(0 -5 ,0 - 30 ,10,30);
-    popMatrix();
     fill(0, 255, 0);
     super.display();
     fill(255);
@@ -15,18 +8,24 @@ class Tank extends GameObject {
 }
 
 void keyPressed() {
+  pushMatrix();
   if (key == 'w') {
-    player.vel.set(player.vel.x, -1);
+    player.vel.set(0, -1);
   }
   if (key == 's') {
     player.vel.set(0, 1);
   }
   if (key == 'a') {
+    translate(player.pos.x,player.pos.y);
+    rotate(angle);
+    rectMode(CENTER);
     angle += 0.1;
   }
     if (key == 'd') {
-    angle += -0.1;
+  // add rotate function
   }
+  
+  popMatrix();
 }
 
 void keyReleased() {
