@@ -1,10 +1,11 @@
 class Wall extends GameObject {
   
-  //PVector pos = new PVector ();
-  //void setup()
+  PVector pos = new PVector ();
+  void display(){
   
-  //pos.x = random(100,400);
-  //pos.y = random(100,400);
+  pos.x = (400);
+  pos.y = (400);
   
-  //square(pos.x,pos.y,random(10,50));
+  square(pos.x,pos.y,(50));
+  }
 }

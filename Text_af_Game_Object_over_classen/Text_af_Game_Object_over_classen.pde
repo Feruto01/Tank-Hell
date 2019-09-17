@@ -14,8 +14,8 @@ class GameObject {
   void update() {
     pos.add(vel);
     for (GameObject g2: list){
-      if (g.equals(g2)){
-      continue;
+     if (g.equals(g2)){
+    continue;
    }
     if (dist(player.pos.x, player.pos.y, wall.pos.x, wall.pos.y)<=collisionRadius+collisionRadius) {
       vel.x *= -1;
