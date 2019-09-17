@@ -1,10 +1,5 @@
 float angle = 0;
 
-
-
-
-
-
 class GameObject {
   PVector pos = new PVector();
   PVector vel = new PVector();
