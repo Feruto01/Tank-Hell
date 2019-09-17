@@ -18,6 +18,7 @@ void setup() {
 
   list.add(player);
   list.add(wall);
+  list.add(skud);
 }
 
 void draw() {
