@@ -3,7 +3,7 @@ class Tank extends GameObject {
   void display() {
     pushMatrix();
     translate(player.pos.x,player.pos.y);
-        rotate(angle);
+    rotate(angle);
 
     rect(0 - 15 ,0 - 15 ,30,30);
     rect(0 -5 ,0 - 30 ,10,30);
@@ -26,7 +26,10 @@ void keyPressed() {
   }
     if (key == 'd') {
     angle += -0.1;
+   
   }
+  PVector vel = new PVector (1,0);
+  vel = vel.rotate(angle);
 }
 
 void keyReleased() {
