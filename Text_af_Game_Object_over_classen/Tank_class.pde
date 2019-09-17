@@ -20,9 +20,16 @@ void keyPressed() {
   if (key == 'w') {
     player.vel.set(vel.x, vel.y);
   }
+  if (keyCode == UP) {
+    player2.vel.set(vel.x, vel.y);
+  }
   if (key == 's') {
     player.vel.set(-vel.x, -vel.y);
   }
+  if (keyCode == DOWN) {
+    player2.vel.set(-vel.x, -vel.y);
+  }
+    
   if (key == 'a') {
     angle += -0.1;
   }

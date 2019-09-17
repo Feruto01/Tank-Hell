@@ -1,4 +1,5 @@
 GameObject player = new Tank();
+GameObject player2 = new Tank();
 GameObject wall   = new Wall();
 GameObject skud   = new Skud();
 
