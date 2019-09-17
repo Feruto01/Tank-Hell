@@ -23,12 +23,3 @@ class GameObject{
 
   }
 }
-
-  void keyPressed() {
-  if (key == 'w') {
-    player.vel.set(0, 1);
-  }
-    if (key == 's') {
-    player.vel.set(0, -1);
-  }
-  }
