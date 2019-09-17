@@ -7,25 +7,25 @@ GameObject enemy  = new Tank();
 ArrayList<GameObject> list = new ArrayList<GameObject>();
 
 
- 
 
-public void settings(){
- size(500, 500);
+
+public void settings() {
+  size(500, 500);
 }
 
 void setup() {
 
- 
+
   player.pos.set(300, 300);
   player.vel.set(0, 0);
   wall.pos.set(200, 200);
   //skud.pos.set(200, 300);
 
-  
+
 
   list.add(player);
   list.add(wall);
-//  list.add(skud);
+  //  list.add(skud);
 }
 
 void draw() {
@@ -34,11 +34,4 @@ void draw() {
     g.display();
     g.update();
   }
- 
 }
-
-
-
-
-
-  
