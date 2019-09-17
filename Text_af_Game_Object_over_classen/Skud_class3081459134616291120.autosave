@@ -1,0 +1,23 @@
+class Skud extends GameObject{
+  
+  
+  
+  void draw (){
+ellipse (player.pos.x,player.pos.y,collisionRadius,collisionRadius);
+
+
+  }
+ 
+// void update
+ 
+  
+//void keyPressed () {
+  
+  //if (key == 'f')
+ //  ellipse(pos.x,pos.y,collisionRadius/2,collisionRadius/2);
+   
+ // }
+
+ 
+  }
+  
