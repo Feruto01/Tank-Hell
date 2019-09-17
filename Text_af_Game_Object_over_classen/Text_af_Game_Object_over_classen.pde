@@ -21,31 +21,32 @@ class GameObject {
     continue;
    }
     if (dist(player.pos.x, player.pos.y, wall.pos.x, wall.pos.y)<=collisionRadius+collisionRadius) {
-      vel.x *= -1;
-      vel.y *= -1;
+      g2.vel.x *= -1;
+      g2.vel.y *= -1;
     }
-    }
+    
    
   
-    if (pos.x<= 0){
-     vel.x *= -1;
-     pos.x = 0;
+    if (g2.pos.x<= 0){
+     g2.vel.x *= -1;
+     g2.pos.x = 0;
    }
    
-     if (pos.x>= width){
-     vel.x *= -1;
-     pos.x = width;
+     if (g2.pos.x>= width){
+     g2.vel.x *= -1;
+     g2.pos.x = width;
    }
    
-     if (pos.y<= 0){
-     vel.y *= -1;
-     pos.y = 0;
+     if (g2.pos.y< 0){
+     g2.vel.y = 0;
+     g2.pos.y = 1;
    }
    
-     if (pos.y>= height){
-     vel.y *= -1;
-     pos.y = height;
+     if (g2.pos.y>= height){
+     g2.vel.y *= -1;
+     g2.pos.y = height;
    }
   }
   }
   
+}

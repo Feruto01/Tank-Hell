@@ -19,6 +19,7 @@ void setup() {
   player.pos.set(300, 300);
   player.vel.set(0, 0);
   wall.pos.set(200, 200);
+
   
 
   list.add(player);
@@ -32,7 +33,10 @@ void draw() {
     g.display();
     g.update();
   }
+ 
 }
+
+
 
 
 

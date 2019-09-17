@@ -1,7 +1,11 @@
 class Skud extends GameObject {
 
+  
+  
+  
 
-PVector vel = new PVector(2,2);
+
+PVector vel = new PVector(6,6);
 
   void keyPressed () {
     if (key == 'F') {
@@ -14,18 +18,26 @@ PVector vel = new PVector(2,2);
     }
   }
   void display() {
-    pos = pos.add(vel);
-    if (keyPressed)
+    
+     if (keyPressed)
     {
       if (key == 'f' || key == 'F'){
-        println("Pressed F");
+        
         fill(255);
         ellipse(player.pos.x, player.pos.y, collisionRadius/2, collisionRadius/2);
       }
-    }
+ /*    pushMatrix();
+    translate (player.pos.x, player. pos. y);
+    pos.add(vel);
+    rotate(angle);
 
-  }
-  void update(){
-    pos = pos.add(vel);
+    rect(0  ,0  ,15,15);
+    rect(0  ,0  ,15,15);
+    popMatrix();*/
+   
+   
+      
+    }
+ 
   }
 }
