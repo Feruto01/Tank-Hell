@@ -12,8 +12,6 @@ public void settings() {
 
 void setup() {
 
-  size(500, 500);
-
 
   player.pos.set(100, 100);
   player.vel.set(0, 0);
@@ -30,13 +28,3 @@ void draw() {
     g.update();
 }
 }
-
-void keyPressed() {
-  if (key == 'w') {
-    player.vel.set(0, 1);
-  }
-    if (key == 's') {
-    player.vel.set(0, -1);
-  }
-  }
-  
