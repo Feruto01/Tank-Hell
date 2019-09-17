@@ -5,7 +5,7 @@ class Skud extends GameObject {
   
 
 
-PVector vel = new PVector(6,6);
+//PVector vel = new PVector(6,6);
 
   void keyPressed () {
     if (key == 'F') {
@@ -20,8 +20,9 @@ PVector vel = new PVector(6,6);
   
   
   void display() {
-    
-     if (keyPressed)
+            fill(255);
+        ellipse(pos.x, pos.y, collisionRadius/2, collisionRadius/2);
+   /*  if (keyPressed)
     {
       if (key == 'f' || key == 'F'){
      
@@ -33,7 +34,7 @@ PVector vel = new PVector(6,6);
 
 
          
-    }
+    }*/
     
   }
 }

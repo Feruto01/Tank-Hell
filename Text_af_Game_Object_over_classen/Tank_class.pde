@@ -14,6 +14,9 @@ class Tank extends GameObject {
   }
 }
 
+
+//UDENFOR TANK KLASSEN
+
 void keyPressed() {
     PVector vel = new PVector (0,-1);
     vel = vel.rotate(angle);
@@ -37,6 +40,14 @@ void keyPressed() {
     angle += 0.1;
    
   }
+if(key == 'f'){
+  Skud s = new Skud();
+  s.pos.set(player.pos.x,player.pos.y);
+  s.vel.set(1,1);
+  s.vel.rotate(angle - 3*PI/4);
+  list.add(s);
+}
+
 
 }
 
