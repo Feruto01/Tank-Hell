@@ -1,0 +1,39 @@
+GameObject player = new Tank();
+GameObject player2 = new Tank();
+GameObject wall   = new Wall();
+GameObject[] skud   = new Skud[30];
+GameObject enemy  = new Tank();
+
+ArrayList<GameObject> list = new ArrayList<GameObject>();
+
+
+
+
+public void settings() {
+  size(500, 500);
+}
+
+void setup() {
+  for (int i = 0; i < skud.length; i++) {
+    skud[i] = new Skud();
+  }
+
+  player.pos.set(300, 300);
+  player.vel.set(0, 0);
+  wall.pos.set(200, 200);
+
+
+  list.add(player);
+  list.add(wall);
+}
+
+void draw() {
+  for (int i = 0; i < skud.length; i++) {
+    skud[i].display();
+  }
+  clear();
+  for (GameObject g : list) {
+    g.display();
+    g.update();
+  }
+}

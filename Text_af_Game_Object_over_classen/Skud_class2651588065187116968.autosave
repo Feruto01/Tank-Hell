@@ -1,0 +1,23 @@
+class Skud extends GameObject {
+
+
+  PVector vel = new PVector(2, 2);
+
+  void keyPressed () {
+    if (key == 'F') {
+  fill(200, 200, 0);
+  skud[c].location = new PVector(30, 30);
+  skud[c].velocity = new PVector(2, 2);
+  c++;
+    }
+  }
+  void display() {
+      fill(200, 200, 0);
+    ellipse(location.x, location.y, collisionRadius/2, collisionRadius/2);
+  }
+}
+
+
+void mouseClicked() {
+
+}
