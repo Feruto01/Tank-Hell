@@ -1,5 +1,6 @@
 GameObject player = new Tank();
 GameObject wall   = new Wall();
+GameObject skud   = new Skud();
 
 ArrayList<GameObject> list = new ArrayList<GameObject>();
 
