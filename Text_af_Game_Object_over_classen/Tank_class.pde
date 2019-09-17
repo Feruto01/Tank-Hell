@@ -15,21 +15,22 @@ class Tank extends GameObject {
 }
 
 void keyPressed() {
+    PVector vel = new PVector (0,-1);
+    vel = vel.rotate(angle);
   if (key == 'w') {
-    player.vel.set(player.vel.x, -1);
+    player.vel.set(vel.x, vel.y);
   }
   if (key == 's') {
-    player.vel.set(0, 1);
+    player.vel.set(-vel.x, vel.y);
   }
   if (key == 'a') {
-    angle += 0.1;
+    angle += -0.1;
   }
     if (key == 'd') {
-    angle += -0.1;
+    angle += 0.1;
    
   }
-  PVector vel = new PVector (1,0);
-  vel = vel.rotate(angle);
+
 }
 
 void keyReleased() {
