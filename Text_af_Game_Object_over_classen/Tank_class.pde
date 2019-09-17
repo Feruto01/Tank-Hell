@@ -21,7 +21,7 @@ void keyPressed() {
     player.vel.set(vel.x, vel.y);
   }
   if (key == 's') {
-    player.vel.set(-vel.x, vel.y);
+    player.vel.set(-vel.x, -vel.y);
   }
   if (key == 'a') {
     angle += -0.1;
