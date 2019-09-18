@@ -96,6 +96,16 @@ stroke (255+lifespanSkud);
     list.add(s);
 
   }
+     Skud e = new Skud();
+
+if(dist(player.pos.x,player.pos.y,enemy.pos.x,enemy.pos.y)<=200) {
+
+    e.pos.set(enemy.pos.x, enemy.pos.y);
+    e.vel.set(1,1);
+    e.vel.rotate(angle - 3*PI/4);
+
+    list.add(e);
+}
 }
 
 void keyReleased() {
