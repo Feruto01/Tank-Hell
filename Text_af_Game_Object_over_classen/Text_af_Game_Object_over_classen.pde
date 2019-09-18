@@ -2,7 +2,7 @@ float angle = 0;
 
 class GameObject {
 
-
+  float lifespan = 0;
   PVector pos = new PVector();
   PVector vel = new PVector();
   PVector acceleration = new PVector();
