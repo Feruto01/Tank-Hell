@@ -17,49 +17,9 @@ class Tank extends GameObject {
     fill(0, 255, 0);
     super.display();
     fill(255);
-
-
-
   }
+
 }
-  void update(){
-
-
-fill(255+lifespanSkud);
-stroke (255+lifespanSkud);
-/*   if  (s = g);{
-      lifespan = -50;
-     }
-*/
-
-
-    if (enemy.pos.x<= 0) {
-        enemy.vel.x *= -1;
-        enemy.pos.x = 0+10;
-      }
-
-      if (enemy.pos.x>= width) {
-        enemy.vel.x *= -1;
-        enemy.pos.x = width-10;
-      }
-
-      if (enemy.pos.y<= 0) {
-        enemy.vel.y = -1;
-        enemy.pos.y = 10;
-      }
-
-      if (enemy.pos.y>= height) {
-        enemy.vel.y *= -1;
-        enemy.pos.y = height + 10;
-      }
-
-
-
-    }
-
-
-
-//UDENFOR TANK KLASSEN
 
 void keyPressed() {
   PVector vel = new PVector (0, -1);
@@ -84,8 +44,8 @@ void keyPressed() {
     angle += 0.1;
   }
   if (key == 'f') {
-       fill(255+lifespanSkud);
-stroke (255+lifespanSkud);
+    fill(255+lifespanSkud);
+    stroke (255+lifespanSkud);
     Skud s = new Skud();
 
     s.pos.set(player.pos.x, player.pos.y);
@@ -93,10 +53,8 @@ stroke (255+lifespanSkud);
     s.vel.rotate(angle - 3*PI/4);
 
     list.add(s);
-
   }
 }
-
 void keyReleased() {
   player.vel.set(0, 0);
 }

@@ -1,0 +1,2 @@
+class TankPlayer extends Tank{
+}

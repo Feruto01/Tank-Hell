@@ -1,15 +1,14 @@
-GameObject player = new Tank();
-GameObject player2 = new Tank();
+GameObject player = new TankPlayer();
+GameObject player2 = new TankPlayer();
 GameObject wall   = new Wall();
 // GameObject skud   = new Skud();
-GameObject enemy  = new Tank();
+GameObject enemy  = new TankEnemy();
 
 ArrayList<GameObject> list = new ArrayList<GameObject>();
 
 
 
 float lifespan = 0;
-
 
 
 public void settings() {
@@ -40,21 +39,21 @@ void draw() {
   clear();
   lifespanSkud += -1;
 
-  for (GameObject g : list) {
+  for (int i= 0; i < list.size(); i++) {
+    GameObject g = list.get(i);
     g.display();
     g.update();
 
 
-if (keyPressed){
+    if (keyPressed) {
 
-if (key == 'f'||key == 'F') {
-    lifespanSkud = 500.0;
+      if (key == 'f'||key == 'F') {
+        lifespanSkud = 500.0;
+      }
+    }
 
- }
-}
 
-
-   println(lifespanSkud);
+    println(lifespanSkud);
 
 
 

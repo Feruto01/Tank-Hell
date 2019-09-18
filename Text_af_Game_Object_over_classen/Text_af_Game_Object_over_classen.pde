@@ -1,5 +1,6 @@
 float angle = 0;
 Float lifespanSkud  = 500.0;
+
 class GameObject {
 
   float lifespan = 0;
@@ -11,23 +12,15 @@ class GameObject {
 
   void display() {
     ellipse(pos.x, pos.y, 2*collisionRadius, 2*collisionRadius);
-
   }
 
 
   void update() {
     pos.add(vel);
-    //enemy.pos.add(vel);
 
+    for (int i= 0; i < list.size(); i++) {
+      GameObject g2 = list.get(i);
 
-  //  if (this instanceof Skud) {
-  //    println("DER ER SKUD" + pos + " " + vel);
-      
-  //  }
-
-
-    for (GameObject g2 : list) {
-      
       if (this.equals(g2)) {
         return;
       }
@@ -35,36 +28,7 @@ class GameObject {
         g2.vel.x *= -1;
         g2.vel.y *= -1;
       }
-      
-       
-      /*if (dist(player.pos.x, player.pos.y, g2.pos.x, g2.pos.y)<=collisionRadius+collisionRadius) {
-      player.vel.set(0,0);
-      player.fill(255,255,255);
-      } */
 
-
-/*
-      if (g2.pos.x<= 0) {
-        g2.vel.x *= -1;
-        g2.pos.x = 0+10;
-      }
-
-      if (g2.pos.x>= width) {
-        g2.vel.x *= -1;
-        g2.pos.x = width-10;
-      }
-
-      if (g2.pos.y<= 0) {
-        g2.vel.y = -1;
-        g2.pos.y = 10;
-      }
-
-      if (g2.pos.y>= height) {
-        g2.vel.y *= -1;
-        g2.pos.y = height + 10;
-      }*/
     }
-    
   }
-  
 }
