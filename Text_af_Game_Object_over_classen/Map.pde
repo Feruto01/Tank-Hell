@@ -56,7 +56,7 @@ void draw() {
 
       if (g.pos.y>= height) {
         g.vel.y *= -1;
-        g.pos.y = height + 10;
+        g.pos.y = height - 10;
       }
     
   }
