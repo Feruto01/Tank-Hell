@@ -41,7 +41,6 @@ void draw() {
   lifespanSkud += -1;
 
   for (GameObject g : list) {
-
     g.display();
     g.update();
 
