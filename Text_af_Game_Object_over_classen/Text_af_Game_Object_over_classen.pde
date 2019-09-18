@@ -5,6 +5,7 @@ class GameObject {
 
   PVector pos = new PVector();
   PVector vel = new PVector();
+  PVector acceleration = new PVector();
 
   float collisionRadius = 10;
 
