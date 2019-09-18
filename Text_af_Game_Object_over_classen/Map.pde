@@ -7,7 +7,7 @@ GameObject enemy  = new Tank();
 ArrayList<GameObject> list = new ArrayList<GameObject>();
 
 
-
+float lifespan = 0;
 
 public void settings() {
   size(500, 500);
@@ -20,7 +20,8 @@ void setup() {
   player.vel.set(0, 0);
   wall.pos.set(200, 200);
   //skud.pos.set(200, 300);
-  
+   stroke (255-lifespan);
+      fill (255-lifespan);
   enemy.pos.set (400,100);
   enemy.vel.set (-1, 1);
 
@@ -38,6 +39,9 @@ void draw() {
     g.display();
     g.update();
     
+    
+     
+    }
     
     if (g.pos.x<= 0) {
         g.vel.x *= -1;
@@ -60,4 +64,3 @@ void draw() {
       }
     
   }
-}

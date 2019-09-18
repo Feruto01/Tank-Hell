@@ -1,4 +1,5 @@
 class Tank extends GameObject {
+
   void display() {
     pushMatrix();
     translate(player.pos.x, player.pos.y);
@@ -10,9 +11,20 @@ class Tank extends GameObject {
     fill(0, 255, 0);
     super.display();
     fill(255);
+
+
+
   }
 }
   void update(){
+
+
+  /*   if  (Skud = this);{
+      lifespan = -50;
+
+      }
+    */
+
     if (enemy.pos.x<= 0) {
         enemy.vel.x *= -1;
         enemy.pos.x = 0+10;
@@ -32,8 +44,12 @@ class Tank extends GameObject {
         enemy.vel.y *= -1;
         enemy.pos.y = height + 10;
       }
-        
-  }
+
+
+
+
+
+    }
 
 
 
