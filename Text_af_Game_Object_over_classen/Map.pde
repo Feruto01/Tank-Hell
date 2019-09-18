@@ -1,7 +1,7 @@
 GameObject player = new Tank();
 GameObject player2 = new Tank();
 GameObject wall   = new Wall();
-//GameObject skud   = new Skud();
+// GameObject skud   = new Skud();
 GameObject enemy  = new Tank();
 
 ArrayList<GameObject> list = new ArrayList<GameObject>();
