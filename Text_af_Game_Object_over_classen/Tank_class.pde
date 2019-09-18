@@ -1,5 +1,10 @@
 class Tank extends GameObject {
 
+  
+  Float lifespanSkud  = 500.0;
+  
+  
+  
   void display() {
     pushMatrix();
     translate(player.pos.x, player.pos.y);
@@ -18,7 +23,7 @@ class Tank extends GameObject {
 }
   void update(){
 
-
+lifespanSkud = lifespanSkud * (-1);
   /*   if  (Skud = this);{
       lifespan = -50;
 
