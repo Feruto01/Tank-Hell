@@ -19,10 +19,6 @@ class Skud extends GameObject {
     fill(255);
     ellipse(pos.x, pos.y, collisionRadius/2, collisionRadius/2);
     
-      if (dist(player.pos.x, player.pos.y, enemy.pos.x, enemy.pos.y)<=200) {
-      ellipse(enemy.pos.x, enemy.pos.y, collisionRadius/2, collisionRadius/2); 
-
-    }
     /*  if (keyPressed)
      {
      if (key == 'f' || key == 'F'){

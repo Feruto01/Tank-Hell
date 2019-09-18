@@ -23,7 +23,7 @@ class Tank extends GameObject {
 }
   void update(){
 
-lifespanSkud = lifespanSkud * (-1);
+//lifespanSkud = lifespanSkud * (-1);
   /*   if  (Skud = this);{
       lifespan = -50;
      }
@@ -50,7 +50,14 @@ lifespanSkud = lifespanSkud * (-1);
         enemy.pos.y = height + 10;
       }
 
+      if (dist(player.pos.x, player.pos.y, enemy.pos.x, enemy.pos.y)<=200) {
+    Skud e = new Skud();
+    e.pos.set(player.pos.x, player.pos.y);
+    e.vel.set(1, 1);
+    e.vel.rotate(angle - 3*PI/4);
+    list.add(e); 
 
+    }
 
 
 
