@@ -8,9 +8,9 @@ class Skud extends GameObject {
   //PVector vel = new PVector(6,6);
 
   void keyPressed () {
-    if (key == 'F') {
-      fill(200, 200, 0);
-      ellipse(player.pos.x, player.pos.y, collisionRadius/2, collisionRadius/2);
+      if (key == 'F') {
+        fill(200, 200, 0);
+        ellipse(player.pos.x, player.pos.y, collisionRadius/2, collisionRadius/2);
     }
   }
 
@@ -18,7 +18,6 @@ class Skud extends GameObject {
   void display() {
     fill(255);
     ellipse(pos.x, pos.y, collisionRadius/2, collisionRadius/2);
-    ellipse(enemy.pos.x, enemy.pos.y, collisionRadius/2, collisionRadius/2);
     /*  if (keyPressed)
      {
      if (key == 'f' || key == 'F'){
@@ -33,4 +32,5 @@ class Skud extends GameObject {
      
      }*/
   }
+  
 }

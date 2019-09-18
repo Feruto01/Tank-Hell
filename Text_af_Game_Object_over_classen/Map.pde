@@ -38,6 +38,7 @@ void draw() {
   for (GameObject g : list) {
     g.display();
     g.update();
+    
 
 
     if (g.pos.x<= 0) {

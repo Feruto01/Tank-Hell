@@ -16,7 +16,7 @@ class GameObject {
 
   void update() {
     pos.add(vel);
-    enemy.pos.add(vel);
+    //enemy.pos.add(vel);
 
     if (this instanceof Skud) {
       println("DER ER SKUD" + pos + " " + vel);
@@ -33,7 +33,8 @@ class GameObject {
         g2.vel.y *= -1;
       }
       
-      /* if (dist(player.pos.x, player.pos.y, g2.pos.x, g2.pos.y)<=collisionRadius+collisionRadius) {
+       
+      /*if (dist(player.pos.x, player.pos.y, g2.pos.x, g2.pos.y)<=collisionRadius+collisionRadius) {
       player.vel.set(0,0);
       player.fill(255,255,255);
       } */
