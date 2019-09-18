@@ -1,10 +1,10 @@
 class Tank extends GameObject {
 
-  
-  
-  
-  
-  
+
+  Float lifespanSkud  = 500.0;
+
+
+
   void display() {
     lifespanSkud += -1;
     pushMatrix();
@@ -30,9 +30,9 @@ fill(255+lifespanSkud);
 stroke (255+lifespanSkud);
 /*   if  (s = g);{
       lifespan = -50;
+     }
+*/
 
-      }
-  */  
 
     if (enemy.pos.x<= 0) {
         enemy.vel.x *= -1;
@@ -53,8 +53,6 @@ stroke (255+lifespanSkud);
         enemy.vel.y *= -1;
         enemy.pos.y = height + 10;
       }
-
-
 
 
 
@@ -90,11 +88,11 @@ void keyPressed() {
        fill(255+lifespanSkud);
 stroke (255+lifespanSkud);
     Skud s = new Skud();
- 
+
     s.pos.set(player.pos.x, player.pos.y);
     s.vel.set(1, 1);
     s.vel.rotate(angle - 3*PI/4);
-     
+
     list.add(s);
 
   }
