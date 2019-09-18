@@ -1,5 +1,5 @@
 float angle = 0;
-
+Float lifespanSkud  = 500.0;
 class GameObject {
 
   float lifespan = 0;
@@ -17,13 +17,15 @@ class GameObject {
   void update() {
     pos.add(vel);
 
-    if (this instanceof Skud) {
-      println("DER ER SKUD" + pos + " " + vel);
+
+  //  if (this instanceof Skud) {
+  //    println("DER ER SKUD" + pos + " " + vel);
       
-    }
+  //  }
 
 
     for (GameObject g2 : list) {
+      
       if (this.equals(g2)) {
         return;
       }

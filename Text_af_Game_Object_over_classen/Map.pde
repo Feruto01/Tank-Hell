@@ -7,7 +7,10 @@ GameObject enemy  = new Tank();
 ArrayList<GameObject> list = new ArrayList<GameObject>();
 
 
+
 float lifespan = 0;
+
+
 
 public void settings() {
   size(500, 500);
@@ -35,9 +38,25 @@ void setup() {
 
 void draw() {
   clear();
+  lifespanSkud += -1;
+  
   for (GameObject g : list) {
+   
     g.display();
     g.update();
+     
+     
+if (keyPressed){
+  
+if (key == 'f'||key == 'F') {
+    lifespanSkud = 500.0;
+    
+ }
+}
+
+
+   println(lifespanSkud);  
+
 
 
     if (g.pos.x<= 0) {

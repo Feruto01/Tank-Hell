@@ -1,11 +1,12 @@
 class Tank extends GameObject {
 
   
-  Float lifespanSkud  = 500.0;
+  
   
   
   
   void display() {
+    lifespanSkud += -1;
     pushMatrix();
     translate(player.pos.x, player.pos.y);
     rotate(angle);
@@ -23,12 +24,15 @@ class Tank extends GameObject {
 }
   void update(){
 
-lifespanSkud = lifespanSkud * (-1);
-  /*   if  (Skud = this);{
+
+
+fill(255+lifespanSkud);
+stroke (255+lifespanSkud);
+/*   if  (s = g);{
       lifespan = -50;
 
       }
-    */
+  */  
 
     if (enemy.pos.x<= 0) {
         enemy.vel.x *= -1;
@@ -83,10 +87,14 @@ void keyPressed() {
     angle += 0.1;
   }
   if (key == 'f') {
+       fill(255+lifespanSkud);
+stroke (255+lifespanSkud);
     Skud s = new Skud();
+ 
     s.pos.set(player.pos.x, player.pos.y);
     s.vel.set(1, 1);
     s.vel.rotate(angle - 3*PI/4);
+     
     list.add(s);
 
   }
