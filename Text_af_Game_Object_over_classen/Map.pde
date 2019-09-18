@@ -50,7 +50,7 @@ void draw() {
       }
 
       if (g.pos.y<= 0) {
-        g.vel.y = -1;
+        g.vel.y *= -1;
         g.pos.y = 10;
       }
 
