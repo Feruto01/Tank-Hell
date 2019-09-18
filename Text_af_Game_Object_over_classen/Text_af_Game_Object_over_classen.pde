@@ -19,16 +19,21 @@ class GameObject {
 
     if (this instanceof Skud) {
       println("DER ER SKUD" + pos + " " + vel);
+      
     }
 
 
     for (GameObject g2 : list) {
-      if (g.equals(g2)) {
-        continue;
+      if (this.equals(g2)) {
+        return;
       }
       if (dist(pos.x, pos.y, g2.pos.x, g2.pos.y)<=collisionRadius+collisionRadius) {
         g2.vel.x *= -1;
         g2.vel.y *= -1;
+      }
+      
+      if (dist(player.pos.x, player.pos.y, g2.pos.x, g2.pos.y)<=collisionRadius+collisionRadius) {
+      //remove(player);
       }
 
 
