@@ -16,6 +16,7 @@ class GameObject {
 
   void update() {
     pos.add(vel);
+    enemy.pos.add(vel);
 
     if (this instanceof Skud) {
       println("DER ER SKUD" + pos + " " + vel);

@@ -19,11 +19,11 @@ class Tank extends GameObject {
   void update(){
 
 
-  /*   if  (Skud = this);{
+ /*  if(skud.pos = this); {
       lifespan = -50;
-
-      }
-    */
+     }
+*/
+    
 
     if (enemy.pos.x<= 0) {
         enemy.vel.x *= -1;
@@ -44,7 +44,7 @@ class Tank extends GameObject {
         enemy.vel.y *= -1;
         enemy.pos.y = height + 10;
       }
-
+      
 
 
 
