@@ -37,26 +37,28 @@ class GameObject {
       }
 
 
-
-      if (g2.pos.x<= 0+10) {
+/*
+      if (g2.pos.x<= 0) {
         g2.vel.x *= -1;
         g2.pos.x = 0+10;
       }
 
-      if (g2.pos.x>= width-10) {
+      if (g2.pos.x>= width) {
         g2.vel.x *= -1;
         g2.pos.x = width-10;
       }
 
-      if (g2.pos.y< 10) {
+      if (g2.pos.y<= 0) {
         g2.vel.y = -1;
         g2.pos.y = 10;
       }
 
-      if (g2.pos.y>= height-10) {
+      if (g2.pos.y>= height) {
         g2.vel.y *= -1;
-        g2.pos.y = height-10;
-      }
+        g2.pos.y = height + 10;
+      }*/
     }
+    
   }
+  
 }

@@ -12,6 +12,27 @@ class Tank extends GameObject {
     fill(255);
   }
 }
+  void update(){
+    if (enemy.pos.x<= 0) {
+        enemy.vel.x *= -1;
+        enemy.pos.x = 0+10;
+      }
+
+      if (enemy.pos.x>= width) {
+        enemy.vel.x *= -1;
+        enemy.pos.x = width-10;
+      }
+
+      if (enemy.pos.y<= 0) {
+        enemy.vel.y = -1;
+        enemy.pos.y = 10;
+      }
+
+      if (enemy.pos.y>= height) {
+        enemy.vel.y *= -1;
+        enemy.pos.y = height + 10;
+      }
+}
 
 
 //UDENFOR TANK KLASSEN
