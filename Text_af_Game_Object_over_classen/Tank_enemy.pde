@@ -1,6 +1,6 @@
 class TankEnemy extends Tank {
 
-  void display() {   
+  void display() {
     super.display();
   }
 
@@ -11,7 +11,7 @@ class TankEnemy extends Tank {
       if(go.isDead)continue;
       if (!(go instanceof TankPlayer))continue;
 
-      
+
       if (dist(pos.x, pos.y, player.pos.x, player.pos.y)<=80) {
 
         //println("TANK INFO:" + this +" "+ dist(pos.x, pos.y, enemy.pos.x, enemy.pos.y) + " pos enemy:" + enemy.pos + " pos:" + pos);
@@ -19,7 +19,11 @@ class TankEnemy extends Tank {
 
         e.pos.set(enemy.pos.x, enemy.pos.y);
         e.vel.set(1, 1);
-        e.vel.rotate(angle - 3*PI/4);
+  /*      a = player.pos.x-enemy.pos.x;
+        b = player.pos.y-enemy.pos.y;
+        c = sqrt(a+b);
+        e.vel.rotate(acos(a/c));
+    */
 
         list.add(e);
       }

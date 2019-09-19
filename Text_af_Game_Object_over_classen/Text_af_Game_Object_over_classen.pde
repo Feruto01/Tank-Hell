@@ -25,12 +25,12 @@ float angle = 0;
 
     for (int i= 0; i < list.size(); i++) {
       GameObject g2 = list.get(i);
-      
+
       //println(i +  " :"+ this + " " + g2 + " " + (this == g2));
             if (this == g2) {
         continue;
-      }   
-      
+      }
+
       collisionDetection(g2);
     }
   }
@@ -38,5 +38,5 @@ float angle = 0;
   void collisionDetection(GameObject g2) {
     if(g2.isDead)return;
   }
-  
+
 }
