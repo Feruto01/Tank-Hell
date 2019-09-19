@@ -10,7 +10,7 @@ class GameObject {
 
   boolean isDead = false;
 
-float angle = 0;
+  float angle = 0;
 
 
   void display() {
