@@ -37,23 +37,24 @@ void setup() {
 
 void draw() {
   clear();
-  lifespanSkud += -1;
 
   for (int i= 0; i < list.size(); i++) {
     GameObject g = list.get(i);
     g.display();
     g.update();
 
+  g.lifespanSkud += -1;
+    
 
     if (keyPressed) {
 
       if (key == 'f'||key == 'F') {
-        lifespanSkud = 500.0;
+        //g.lifespanSkud = 500.0;
       }
     }
 
 
-    println(lifespanSkud);
+    println(g.lifespanSkud);
 
 
 
