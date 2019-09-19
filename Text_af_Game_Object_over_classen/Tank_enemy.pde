@@ -22,7 +22,7 @@ class TankEnemy extends Tank {
         float EnemyAngle = atan2(player.pos.y-enemy.pos.y, player.pos.y-enemy.pos.x); 
         float ex = cos(EnemyAngle) * e.vel.x + enemy.pos.x; 
         float ey = sin(EnemyAngle) * e.vel.y + enemy.pos.y;
-        e.vel.set(ex, ey);
+        e.pos.set(ex, ey);
 
         list.add(e);
       }
