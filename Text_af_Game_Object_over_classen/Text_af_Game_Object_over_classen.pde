@@ -1,4 +1,8 @@
 float angle = 0;
+/*float c = 0;
+float b = 0;
+float a = 0;
+*/
 
 class GameObject {
   float lifespanSkud  = 500.0;

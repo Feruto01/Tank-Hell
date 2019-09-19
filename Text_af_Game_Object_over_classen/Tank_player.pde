@@ -3,13 +3,13 @@ class TankPlayer extends Tank{
 
   void display(){
   
-  if (pos.x , pos.y + dist(g2.pos.x , g2.pos.y)<= mag(collisionRadius + collisionRadius)){
+  if (dist(pos.x, pos.y, this.pos.x ,this.pos.y)<= mag(collisionRadius, collisionRadius)){
 
       
     
       
   
-  clear(TankPLayer);
+ // clear(TankPLayer);
   }
 
   

@@ -2,26 +2,26 @@
 void keyPressed() {
   PVector vel = new PVector (0, -1);
   vel = vel.rotate(angle);
-  if (key == 'w') {
+  if (key == 'w' || key =='W') {
     player.vel.set(vel.x, vel.y);
   }
   if (keyCode == UP) {
     player2.vel.set(vel.x, vel.y);
   }
-  if (key == 's') {
+  if (key == 's' || key == 'S') {
     player.vel.set(-vel.x, -vel.y);
   }
   if (keyCode == DOWN) {
     player2.vel.set(-vel.x, -vel.y);
   }
 
-  if (key == 'a') {
+  if (key == 'a' || key == 'A') {
     angle += -0.1;
   }
-  if (key == 'd') {
+  if (key == 'd' || key == 'D') {
     angle += 0.1;
   }
-  if (key == 'f') {
+  if (key == 'f' || key == 'F') {
   /*  lifespanSkud  = 500.0;
     fill(255+lifespanSkud);
     stroke (255+lifespanSkud);*/
