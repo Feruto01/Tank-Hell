@@ -43,6 +43,8 @@ void draw() {
     g.display();
     g.update();
 
+
+
   g.lifespanSkud += -1;
     
 
@@ -54,7 +56,7 @@ void draw() {
     }
 
 
-    println(g.lifespanSkud);
+  //  println(g.lifespanSkud);
 
 
 

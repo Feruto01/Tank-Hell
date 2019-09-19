@@ -1,13 +1,11 @@
 class Tank extends GameObject {
 
-  boolean isDead = false;
   
   void display() {   
-    if(isDead)return;
     
     lifespanSkud += -1;
     pushMatrix();
-    translate(player.pos.x, player.pos.y);
+    translate(pos.x, pos.y);
     rotate(angle);
 
     rect(0 - 15, 0 - 15, 30, 30);
@@ -18,13 +16,5 @@ class Tank extends GameObject {
     fill(255);
   }
   
-  void update(){
- 
-      
-    
-    
- 
-    super.update();
-  }
 
 }

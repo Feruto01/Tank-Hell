@@ -1,7 +1,7 @@
 
 void keyPressed() {
   PVector vel = new PVector (0, -1);
-  vel = vel.rotate(angle);
+  vel = vel.rotate(player.angle);
   if (key == 'w') {
     player.vel.set(vel.x, vel.y);
   }
@@ -16,10 +16,10 @@ void keyPressed() {
   }
 
   if (key == 'a') {
-    angle += -0.1;
+    player.angle += -0.1;
   }
   if (key == 'd') {
-    angle += 0.1;
+    player.angle += 0.1;
   }
   if (key == 'f') {
   /*  lifespanSkud  = 500.0;
@@ -29,7 +29,7 @@ void keyPressed() {
    
     s.pos.set(player.pos.x, player.pos.y);
     s.vel.set(1, 1);
-    s.vel.rotate(angle - 3*PI/4);
+    s.vel.rotate(player.angle - 3*PI/4);
     
     list.add(s);
     
