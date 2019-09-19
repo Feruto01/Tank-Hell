@@ -31,22 +31,12 @@ stroke (255+lifespanSkud);
   vel.y = (0.0);
   pos.x = (20) ;
   pos.y = (20) ;
-
+  
 }
 
-    /*  if (keyPressed)
-     {
-     if (key == 'f' || key == 'F'){
-
-     fill(255);
-     ellipse(player.pos.x, player.pos.y, collisionRadius/2, collisionRadius/2);
-
-     }
+  
 
 
-
-
-     }*/
-  }
+}
 
 }

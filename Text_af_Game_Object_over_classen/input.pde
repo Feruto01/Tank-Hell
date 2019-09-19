@@ -32,6 +32,8 @@ void keyPressed() {
     s.vel.rotate(angle - 3*PI/4);
     
     list.add(s);
+    
+    
   }
 }
 void keyReleased() {

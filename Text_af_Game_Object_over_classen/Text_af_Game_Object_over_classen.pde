@@ -29,7 +29,7 @@ class GameObject {
     
       
     if (dist(pos.x, pos.y, g2.pos.x, g2.pos.y)<=collisionRadius+collisionRadius) {
-      boolean IsDead = true;
+     
       
        g2.vel.x *= -1;
        g2.vel.y *= -1;

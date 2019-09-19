@@ -19,12 +19,10 @@ class Tank extends GameObject {
   }
   
   void update(){
-    if (isDead = true){
-      Tank.clear();
+ 
       
-      
-    }
-    if(isDead)return;
+    
+    
  
     super.update();
   }
