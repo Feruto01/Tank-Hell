@@ -1,4 +1,3 @@
-
 class GameObject {
   float lifespanSkud  = 700.0;
   float lifespan = 0;
@@ -14,7 +13,7 @@ class GameObject {
 
 
   void display() {
-    
+
     ellipse(pos.x, pos.y, 2*collisionRadius, 2*collisionRadius);
   }
 
@@ -27,8 +26,7 @@ class GameObject {
     for (int i= 0; i < list.size(); i++) {
       GameObject g2 = list.get(i);
 
-      //println(i +  " :"+ this + " " + g2 + " " + (this == g2));
-            if (this == g2) {
+      if (this == g2) {
         continue;
       }
       
@@ -39,7 +37,6 @@ class GameObject {
   }
 
   void collisionDetection(GameObject g2) {
-    if(g2.isDead)return;
+    if (g2.isDead)return;
   }
-
 }
