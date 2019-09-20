@@ -1,8 +1,8 @@
 class TankEnemy extends Tank {
 
   TankEnemy() {
-    
-    
+
+
     r=255;
     g=0;
     b=0;
@@ -28,9 +28,9 @@ class TankEnemy extends Tank {
           Skud e = new Skud();
           PVector pssd = PVector.sub(player.pos, enemy.pos);
           pssd.normalize();
-          PVector paad = pssd.copy().mult(30);     
-          e.pos.set(pos.x + paad.x, pos.y + paad.y);
-
+          PVector paad = pssd.copy().mult(30);
+          e.pos.set(enemy.pos.x + paad.x, enemy.pos.y + paad.y);
+          pssd.mult(10.1);
           e.vel = pssd;
 
 

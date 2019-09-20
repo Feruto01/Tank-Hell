@@ -28,7 +28,7 @@ class Tank extends GameObject {
   void collisionDetection(GameObject g2) {
     if (isDead || g2.isDead && !(g2 instanceof Skud))return;
 
-    println("gameobject collision!:" + dist(pos.x, pos.y, g2.pos.x, g2.pos.y) + " " + (collisionRadius+collisionRadius) + " " + isDead);
+    
     if (dist(pos.x, pos.y, g2.pos.x, g2.pos.y)<=(collisionRadius+collisionRadius)) {
 
       isDead = true;
