@@ -1,5 +1,5 @@
 GameObject player = new TankPlayer();
-GameObject player2 = new TankPlayer();
+//GameObject player2 = new TankPlayer();
 GameObject wall   = new Wall();
 // GameObject skud   = new Skud();
 GameObject enemy  = new TankEnemy();
@@ -9,7 +9,7 @@ GameObject enemy4  = new TankEnemy();
 
 ArrayList<GameObject> list = new ArrayList<GameObject>();
 
-
+int level = 0;
 
 float lifespan = 0;
 
@@ -25,9 +25,9 @@ fill(0,255,0);
   player.pos.set(300, 600);
   player.vel.set(0, 0);
   fill(0,0,255);
-  player2.pos.set(200, 600);
+ /* player2.pos.set(200, 600);
   player2.vel.set(0, 0);
-  
+  */
   wall.pos.set(200, 200);
   //skud.pos.set(200, 300);
   //stroke (255-lifespan);
@@ -48,7 +48,7 @@ fill(0,255,0);
 
 
   list.add(player);
-  list.add(player2);
+//  list.add(player2);
 //  list.add(wall);
   list.add(enemy);
   list.add(enemy2);
@@ -63,13 +63,15 @@ void draw() {
   
   clear();
 
+  text("LEVEL " + level , 100,100);
+
   for (int i= 0; i < list.size(); i++) {
     GameObject g = list.get(i);
     g.display();
     g.update();
     
      
-
+    if(g.isDead)list.remove(g);
 
 
   g.lifespanSkud += -1;

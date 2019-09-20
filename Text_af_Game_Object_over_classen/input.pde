@@ -33,6 +33,9 @@ void keyPressed() {
   /*  lifespanSkud  = 500.0;
     fill(255+lifespanSkud);
     stroke (255+lifespanSkud);*/
+    
+    if(!player.isDead){
+    
     Skud s = new Skud();
 
     s.pos.set(player.pos.x, player.pos.y);
@@ -45,6 +48,7 @@ void keyPressed() {
    p.rotate(player.angle - 2*PI/4);
    s.pos.add(p);
     list.add(s);
+    }
 
 
   }
