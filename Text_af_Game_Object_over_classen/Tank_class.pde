@@ -20,7 +20,7 @@ class Tank extends GameObject {
     fill(255);
   
        isDead = true;{
- if(this instanceof TankEnemy ) level++;}}
+ if(this instanceof TankEnemy ) level++;}   }
      
 
 
