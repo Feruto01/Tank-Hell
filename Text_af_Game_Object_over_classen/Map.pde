@@ -1,7 +1,6 @@
 GameObject player = new TankPlayer();
 GameObject player2 = new TankPlayer();
 GameObject wall   = new Wall();
-// GameObject skud   = new Skud();
 GameObject enemy  = new TankEnemy();
 GameObject enemy2  = new TankEnemy();
 GameObject enemy3  = new TankEnemy();
@@ -29,9 +28,6 @@ void setup() {
   player2.vel.set(0, 0);
 
   wall.pos.set(200, 200);
-  //skud.pos.set(200, 300);
-  //stroke (255-lifespan);
-  //  fill (255-lifespan);
   fill (255, 0, 0);
   enemy.pos.set (random(50, 450), random(50, 450));
   enemy.vel.set (random(1, -1), random(1, -1 ));
