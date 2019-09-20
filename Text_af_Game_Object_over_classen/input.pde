@@ -1,7 +1,9 @@
 //class Input extends GameObject{
 void keyPressed() {
-  PVector vel = new PVector (0, -1);
+  PVector vel = new PVector (0, -3);
   vel = vel.rotate( player.angle );
+
+  
   if (key == 'w' || key =='W') {
     player.vel.set(vel.x, vel.y);
   }

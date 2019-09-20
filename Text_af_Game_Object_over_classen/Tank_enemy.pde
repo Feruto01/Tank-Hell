@@ -19,7 +19,7 @@ class TankEnemy extends Tank {
    if (isDead == true){
      return;
    }else{
-      if (dist(pos.x, pos.y, player.pos.x, player.pos.y)<=150) {
+      if (dist(pos.x, pos.y, player.pos.x, player.pos.y)<=80) {
 
         //println("TANK INFO:" + this +" "+ dist(pos.x, pos.y, enemy.pos.x, enemy.pos.y) + " pos enemy:" + enemy.pos + " pos:" + pos);
 
