@@ -47,7 +47,7 @@ void setup() {
   ((Tank)player).b=255;
 
   fill(0, 255, 0);
-  player.pos.set(300, 600);
+  player.pos.set(10, 790);
   player.vel.set(0, 0);
 
 

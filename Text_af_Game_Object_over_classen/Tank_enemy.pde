@@ -23,13 +23,13 @@ class TankEnemy extends Tank {
       if (isDead == true) {
         return;
       } else {
-        if (dist(pos.x, pos.y, player.pos.x, player.pos.y)<=80) {
+        if (dist(pos.x, pos.y, player.pos.x, player.pos.y)<=120) {
 
           Skud e = new Skud();
-          PVector pssd = PVector.sub(player.pos, enemy.pos);
+          PVector pssd = PVector.sub(player.pos, pos);
           pssd.normalize();
           PVector paad = pssd.copy().mult(30);
-          e.pos.set(enemy.pos.x + paad.x, enemy.pos.y + paad.y);
+          e.pos.set(pos.x + paad.x, pos.y + paad.y);
           pssd.mult(4.1);
           e.vel = pssd;
 
