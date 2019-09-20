@@ -27,6 +27,8 @@ public void settings() {
 }
 
 void setup() {
+    frameRate(30);
+
   ((Tank)player).b=255;
 
   fill(0, 255, 0);
@@ -104,8 +106,12 @@ void draw() {
 
   clear();
 
-  text("LEVEL " + level , 100,100);
-
+  
+  
+  if (level ==  15){
+  text ( "map completed ", 100, 100);
+text (" Winner winner chicken dinner",200, 100);
+}else {text("LEVEL " + level , 100,100);}
   for (int i= 0; i < list.size(); i++) {
     GameObject g = list.get(i);
     g.display();
