@@ -7,26 +7,26 @@ void keyPressed() {
     player.vel.set(vel.x, vel.y);
   }
   if (keyCode == UP) {
-    player2.vel.set(vel.x, vel.y);
+
   }
   if (key == 's' || key == 'S') {
     player.vel.set(-vel.x, -vel.y);
   }
   if (keyCode == DOWN) {
-    player2.vel.set(-vel.x, -vel.y);
+
   }
 
   if (key == 'a' || key == 'A') {
     player.angle += -0.1;
   }
   if (keyCode == RIGHT) {
-    player2.angle += 0.1;
+
   }
   if (key == 'd' || key == 'D') {
     player.angle += 0.1;
   }
   if (keyCode == LEFT) {
-    player2.angle += -0.1;
+
   }
   if (key == 'f' || key == 'F') {
     Skud s = new Skud();
@@ -43,16 +43,16 @@ void keyPressed() {
   if (key == '-' || key == '-') {
     Skud s = new Skud();
 
-    s.pos.set(player2.pos.x, player2.pos.y);
+
     s.vel.set(1, 1);
-    s.vel.rotate(player2.angle - 3*PI/4);
+
     PVector p = new PVector(50, 0);
-    p.rotate(player2.angle - 2*PI/4);
+
     s.pos.add(p);
     list.add(s);
   }
 }
 void keyReleased() {
   player.vel.set(0, 0);
-  player2.vel.set(0, 0);
+
 }

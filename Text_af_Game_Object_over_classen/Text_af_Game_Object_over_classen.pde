@@ -29,8 +29,6 @@ class GameObject {
       if (this == g2) {
         continue;
       }
-      
-//      if(g2.isDead)list.remove(g2);
 
       collisionDetection(g2);
     }

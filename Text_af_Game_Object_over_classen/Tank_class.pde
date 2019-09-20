@@ -18,10 +18,10 @@ class Tank extends GameObject {
     fill(r, g, b);
     super.display();
     fill(255);
-  }
-   isDead = true;
+  
+ //  isDead = true;
       if(this instanceof TankEnemy ) level++;
-      
+
 
 
       }

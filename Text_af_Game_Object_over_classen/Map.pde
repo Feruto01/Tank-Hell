@@ -1,6 +1,4 @@
 GameObject player = new TankPlayer();
-//GameObject player2 = new TankPlayer();
-GameObject wall   = new Wall();
 GameObject enemy  = new TankEnemy();
 GameObject enemy2  = new TankEnemy();
 GameObject enemy3  = new TankEnemy();
@@ -24,10 +22,8 @@ void setup() {
   player.pos.set(300, 600);
   player.vel.set(0, 0);
   fill(0, 0, 255);
-  player2.pos.set(200, 600);
-  player2.vel.set(0, 0);
 
-  wall.pos.set(200, 200);
+
   fill (255, 0, 0);
   enemy.pos.set (random(50, 450), random(50, 450));
   enemy.vel.set (random(1, -1), random(1, -1 ));
@@ -44,8 +40,8 @@ void setup() {
 
 
   list.add(player);
-  list.add(player2);
-  //  list.add(wall);
+
+
   list.add(enemy);
   list.add(enemy2);
   list.add(enemy3);
