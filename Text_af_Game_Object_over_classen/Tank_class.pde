@@ -1,5 +1,6 @@
 class Tank extends GameObject {
 
+  float r,g,b;
   
   void display() {   
     
@@ -13,7 +14,7 @@ class Tank extends GameObject {
     rect(0 - 15, 0 - 15, 30, 30);
     rect(0 -5, 0 - 30, 10, 30);
     popMatrix();
-      fill(0, 255, 0);
+     fill(r,g,b);
     super.display();
     fill(255);    
   

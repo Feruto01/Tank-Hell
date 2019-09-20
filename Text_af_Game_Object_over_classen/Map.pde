@@ -19,6 +19,7 @@ public void settings() {
 }
 
 void setup() {
+  ((Tank)player).b=255;
 
 fill(0,255,0);
   player.pos.set(300, 600);

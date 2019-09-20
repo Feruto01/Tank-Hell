@@ -1,4 +1,10 @@
 class TankEnemy extends Tank {
+  
+  TankEnemy(){
+    r=255;g=0;b=0;
+  }
+  
+  
   void display() {
        if(!isDead)
     super.display();
