@@ -19,9 +19,9 @@ stroke (255+lifespanSkud);
 
 
   void display() {
-    if(isDead){
-      return;
-    }
+  //  if(isDead){
+ //     return;
+  //  }
     
     fill(255);
        fill(255+lifespanSkud);
@@ -32,8 +32,8 @@ stroke (255+lifespanSkud);
 
   vel.x = (0.0);
   vel.y = (0.0);
-  pos.x = (20) ;
-  pos.y = (20) ;
+  pos.x = (-20) ;
+  pos.y = (-20) ;
   
 }
 

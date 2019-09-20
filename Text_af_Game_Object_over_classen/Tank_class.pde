@@ -9,6 +9,7 @@ class Tank extends GameObject {
     fill(255);
     translate(pos.x, pos.y);
     rotate(angle);
+    
 
     rect(0 - 15, 0 - 15, 30, 30);
     rect(0 -5, 0 - 30, 10, 30);
