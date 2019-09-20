@@ -184,7 +184,7 @@ void draw() {
 
   
   
-  if (level ==  15){
+  if (level ==  30){
   text ( "map completed ", 100, 100);
 text (" Winner winner chicken dinner",200, 100);
 }else {text("LEVEL " + level , 100,100);}
