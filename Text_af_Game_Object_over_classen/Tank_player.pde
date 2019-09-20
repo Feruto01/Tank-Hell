@@ -15,11 +15,6 @@ class TankPlayer extends Tank {
   void update() {
 
 
-    if (player == player2) {
-
-      stroke(255);
-      fill(0, 0, 255);
-    }
     super.update();
   }
 }

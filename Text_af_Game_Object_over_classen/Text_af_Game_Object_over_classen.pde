@@ -30,7 +30,7 @@ class GameObject {
         continue;
       }
       
-//      if(g2.isDead)list.remove(g2);
+
 
       collisionDetection(g2);
     }
