@@ -29,7 +29,7 @@ class TankEnemy extends Tank {
           PVector pssd = PVector.sub(player.pos, enemy.pos);
           pssd.normalize();
           PVector paad = pssd.copy().mult(30);     
-          e.pos.set(enemy.pos.x + paad.x, enemy.pos.y + paad.y);
+          e.pos.set(pos.x + paad.x, pos.y + paad.y);
 
           e.vel = pssd;
 
