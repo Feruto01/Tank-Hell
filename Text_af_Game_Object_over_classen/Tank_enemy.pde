@@ -2,11 +2,15 @@ class TankEnemy extends Tank {
 
   void display() {
        if(!isDead)
+        stroke(255);
+    fill (255,100,100);
     super.display();
   }
 
   void update() {
-    fill (255,0,0);
+     stroke(255);
+    fill (100,100,100);
+  
     for (int i= 0; i < list.size(); i++) {
 
       GameObject go = list.get(i);
@@ -14,6 +18,11 @@ class TankEnemy extends Tank {
       if (!(go instanceof TankPlayer))continue;
 
    if (isDead == true){
+    
+    
+      
+   
+     
      return;
    }else{
       if (dist(pos.x, pos.y, player.pos.x, player.pos.y)<=80) {

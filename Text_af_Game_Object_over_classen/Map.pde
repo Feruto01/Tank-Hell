@@ -25,8 +25,8 @@ void setup() {
   
   wall.pos.set(200, 200);
   //skud.pos.set(200, 300);
-  stroke (255-lifespan);
-  fill (255-lifespan);
+  //stroke (255-lifespan);
+//  fill (255-lifespan);
   enemy.pos.set (400, 100);
   enemy.vel.set (-1, 1);
 
@@ -46,6 +46,8 @@ void draw() {
     GameObject g = list.get(i);
     g.display();
     g.update();
+    
+     
 
 
 
