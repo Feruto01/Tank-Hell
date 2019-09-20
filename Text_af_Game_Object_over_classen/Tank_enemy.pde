@@ -1,16 +1,14 @@
 class TankEnemy extends Tank {
 
   void display() {
+     
        if(!isDead)
-        stroke(255);
-    fill (255,100,100);
+     
     super.display();
   }
 
   void update() {
-     stroke(255);
-    fill (100,100,100);
-  
+
     for (int i= 0; i < list.size(); i++) {
 
       GameObject go = list.get(i);

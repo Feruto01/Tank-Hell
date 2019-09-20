@@ -17,9 +17,10 @@ public void settings() {
 
 void setup() {
 
-
+fill(0,255,0);
   player.pos.set(300, 300);
   player.vel.set(0, 0);
+  fill(0,0,255);
   player2.pos.set(200, 200);
   player2.vel.set(0, 0);
   
@@ -27,6 +28,7 @@ void setup() {
   //skud.pos.set(200, 300);
   //stroke (255-lifespan);
 //  fill (255-lifespan);
+  fill (255,0,0);
   enemy.pos.set (400, 100);
   enemy.vel.set (-1, 1);
 
