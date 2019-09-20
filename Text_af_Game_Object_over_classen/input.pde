@@ -18,8 +18,14 @@ void keyPressed() {
   if (key == 'a' || key == 'A') {
     player.angle += -0.1;
   }
+   if (keyCode == RIGHT) {
+    player2.angle += 0.1;
+  }
   if (key == 'd' || key == 'D') {
     player.angle += 0.1;
+  }
+     if (keyCode == LEFT) {
+    player2.angle += -0.1;
   }
   if (key == 'f' || key == 'F') {
   /*  lifespanSkud  = 500.0;
