@@ -3,6 +3,9 @@ GameObject player2 = new TankPlayer();
 GameObject wall   = new Wall();
 // GameObject skud   = new Skud();
 GameObject enemy  = new TankEnemy();
+GameObject enemy2  = new TankEnemy();
+GameObject enemy3  = new TankEnemy();
+GameObject enemy4  = new TankEnemy();
 
 ArrayList<GameObject> list = new ArrayList<GameObject>();
 
@@ -12,16 +15,16 @@ float lifespan = 0;
 
 
 public void settings() {
-  size(500, 500);
+  size(800, 800);
 }
 
 void setup() {
 
 fill(0,255,0);
-  player.pos.set(300, 300);
+  player.pos.set(300, 600);
   player.vel.set(0, 0);
   fill(0,0,255);
-  player2.pos.set(200, 200);
+  player2.pos.set(200, 600);
   player2.vel.set(0, 0);
   
   wall.pos.set(200, 200);
@@ -30,8 +33,16 @@ fill(0,255,0);
 //  fill (255-lifespan);
   fill (255,0,0);
   enemy.pos.set (random(50, 450), random(50,450));
-
-  enemy.vel.set (random(2,-2), random(2, -2 ));
+  enemy.vel.set (random(1,-1), random(1, -1 ));
+  
+    enemy2.pos.set (random(50, 450), random(50,450));
+  enemy2.vel.set (random(1,-1), random(1, -1 ));
+  
+    enemy3.pos.set (random(50, 450), random(50,450));
+  enemy3.vel.set (random(1,-1), random(1, -1 ));
+  
+    enemy4.pos.set (random(50, 450), random(50,450));
+  enemy4.vel.set (random(1,-1), random(1, -1 ));
 
 
 
@@ -39,6 +50,9 @@ fill(0,255,0);
   list.add(player2);
 //  list.add(wall);
   list.add(enemy);
+  list.add(enemy2);
+  list.add(enemy3);
+  list.add(enemy4);
  
  
   //  list.add(skud);
