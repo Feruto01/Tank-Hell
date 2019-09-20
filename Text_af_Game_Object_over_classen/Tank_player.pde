@@ -1,36 +1,25 @@
-class TankPlayer extends Tank{
+class TankPlayer extends Tank {
 
-    TankPlayer(){
-    r=0;g=255;b=0;
+  TankPlayer() {
+    r=0;
+    g=255;
+    b=0;
   }
 
-  void display(){
-    if(!isDead)
+  void display() {
+    if (!isDead)
       super.display();
   }
 
-  
-  void update(){
-    
-    
-    if (player == player2){
-    
-    stroke(255);
-    fill(0,0,255);
+
+  void update() {
+
+
+    if (player == player2) {
+
+      stroke(255);
+      fill(0, 0, 255);
     }
     super.update();
   }
-
-
- /*  void collisionDetection(GameObject g2){
-      if(isDead)return;
-      println("gameobject collision!:" + dist(pos.x, pos.y, g2.pos.x, g2.pos.y) + " " + (collisionRadius+collisionRadius) + " " + isDead);
-    if (dist(pos.x, pos.y, g2.pos.x, g2.pos.y)<=(collisionRadius+collisionRadius)) {
-
-    isDead = true; 
-
-       g2.vel.x *= -1;
-       g2.vel.y *= -1;
-
-    } */
-  } 
+} 

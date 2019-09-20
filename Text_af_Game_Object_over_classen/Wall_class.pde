@@ -7,6 +7,5 @@ class Wall extends GameObject {
     pos.y = (400);
 
     square(pos.x, pos.y, (50));
-
   }
 }

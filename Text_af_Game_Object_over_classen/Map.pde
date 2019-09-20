@@ -21,71 +21,51 @@ public void settings() {
 void setup() {
   ((Tank)player).b=255;
 
-fill(0,255,0);
+  fill(0, 255, 0);
   player.pos.set(300, 600);
   player.vel.set(0, 0);
-  fill(0,0,255);
+  fill(0, 0, 255);
   player2.pos.set(200, 600);
   player2.vel.set(0, 0);
-  
+
   wall.pos.set(200, 200);
   //skud.pos.set(200, 300);
   //stroke (255-lifespan);
-//  fill (255-lifespan);
-  fill (255,0,0);
-  enemy.pos.set (random(50, 450), random(50,450));
-  enemy.vel.set (random(1,-1), random(1, -1 ));
-  
-    enemy2.pos.set (random(50, 450), random(50,450));
-  enemy2.vel.set (random(1,-1), random(1, -1 ));
-  
-    enemy3.pos.set (random(50, 450), random(50,450));
-  enemy3.vel.set (random(1,-1), random(1, -1 ));
-  
-    enemy4.pos.set (random(50, 450), random(50,450));
-  enemy4.vel.set (random(1,-1), random(1, -1 ));
+  //  fill (255-lifespan);
+  fill (255, 0, 0);
+  enemy.pos.set (random(50, 450), random(50, 450));
+  enemy.vel.set (random(1, -1), random(1, -1 ));
+
+  enemy2.pos.set (random(50, 450), random(50, 450));
+  enemy2.vel.set (random(1, -1), random(1, -1 ));
+
+  enemy3.pos.set (random(50, 450), random(50, 450));
+  enemy3.vel.set (random(1, -1), random(1, -1 ));
+
+  enemy4.pos.set (random(50, 450), random(50, 450));
+  enemy4.vel.set (random(1, -1), random(1, -1 ));
 
 
 
   list.add(player);
   list.add(player2);
-//  list.add(wall);
+  //  list.add(wall);
   list.add(enemy);
   list.add(enemy2);
   list.add(enemy3);
   list.add(enemy4);
- 
- 
-  //  list.add(skud);
 }
 
 void draw() {
-  
+
   clear();
 
   for (int i= 0; i < list.size(); i++) {
     GameObject g = list.get(i);
     g.display();
     g.update();
-    
-     
 
-
-
-  g.lifespanSkud += -1;
-    
-
-    if (keyPressed) {
-
-      if (key == 'f'||key == 'F') {
-        //g.lifespanSkud = 500.0;
-      }
-    }
-
-
-  //  println(g.lifespanSkud);
-
-
+    g.lifespanSkud += -1;
 
     if (g.pos.x<= 0) {
       g.vel.x *= -1;
