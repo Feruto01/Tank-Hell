@@ -18,13 +18,13 @@ class Tank extends GameObject {
     fill(r, g, b);
     super.display();
     fill(255);
-  
- //  isDead = true;
-      if(this instanceof TankEnemy ) level++;
+
+       isDead = true;{
+ if(this instanceof TankEnemy ) level++;}   }
 
 
 
-      }
+
 
   void collisionDetection(GameObject g2) {
     if (isDead || g2.isDead && !(g2 instanceof Skud))return;
