@@ -14,6 +14,7 @@ class GameObject {
 
 
   void display() {
+    
     ellipse(pos.x, pos.y, 2*collisionRadius, 2*collisionRadius);
   }
 

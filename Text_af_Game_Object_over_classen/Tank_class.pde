@@ -3,7 +3,7 @@ class Tank extends GameObject {
   
   void display() {   
     
-    lifespanSkud += -1;
+    lifespanSkud += -1;  
     pushMatrix();
     stroke(0);
     fill(255);
@@ -15,8 +15,7 @@ class Tank extends GameObject {
     popMatrix();
       fill(0, 255, 0);
     super.display();
-    fill(255);
-    
+    fill(255);    
   
   }
   

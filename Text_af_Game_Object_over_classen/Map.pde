@@ -59,6 +59,7 @@ fill(0,255,0);
 }
 
 void draw() {
+  
   clear();
 
   for (int i= 0; i < list.size(); i++) {
