@@ -20,6 +20,9 @@ void setup() {
 
   player.pos.set(300, 300);
   player.vel.set(0, 0);
+  player2.pos.set(200, 200);
+  player2.vel.set(0, 0);
+  
   wall.pos.set(200, 200);
   //skud.pos.set(200, 300);
   stroke (255-lifespan);
@@ -30,6 +33,7 @@ void setup() {
 
 
   list.add(player);
+  list.add(player2);
   list.add(wall);
   list.add(enemy);
   //  list.add(skud);

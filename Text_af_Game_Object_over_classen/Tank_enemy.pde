@@ -6,6 +6,7 @@ class TankEnemy extends Tank {
   }
 
   void update() {
+    fill (255,0,0);
     for (int i= 0; i < list.size(); i++) {
 
       GameObject go = list.get(i);
