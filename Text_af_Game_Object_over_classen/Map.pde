@@ -14,6 +14,21 @@ GameObject enemy12  = new TankEnemy();
 GameObject enemy13  = new TankEnemy();
 GameObject enemy14  = new TankEnemy();
 GameObject enemy15  = new TankEnemy();
+GameObject enemy16  = new TankEnemy();
+GameObject enemy17  = new TankEnemy();
+GameObject enemy18  = new TankEnemy();
+GameObject enemy19  = new TankEnemy();
+GameObject enemy20  = new TankEnemy();
+GameObject enemy21  = new TankEnemy();
+GameObject enemy22  = new TankEnemy();
+GameObject enemy23  = new TankEnemy();
+GameObject enemy24  = new TankEnemy();
+GameObject enemy25  = new TankEnemy();
+GameObject enemy26  = new TankEnemy();
+GameObject enemy27  = new TankEnemy();
+GameObject enemy28  = new TankEnemy();
+GameObject enemy29  = new TankEnemy();
+GameObject enemy30  = new TankEnemy();
 
 ArrayList<GameObject> list = new ArrayList<GameObject>();
 
@@ -80,6 +95,51 @@ void setup() {
   
    enemy15.pos.set (random(10, 750), random(10, 750));
   enemy15.vel.set (random(3, -3), random(3, -3 ));
+  
+    enemy16.pos.set (random(10, 750), random(10, 750));
+  enemy16.vel.set (random(3, -3), random(3, -3 ));
+
+  enemy17.pos.set (random(50, 450), random(50, 450));
+  enemy17.vel.set (random(1, -1), random(1, -1 ));
+
+  enemy18.pos.set (random(50, 450), random(50, 450));
+  enemy18.vel.set (random(1, -1), random(1, -1 ));
+
+  enemy19.pos.set (random(50, 450), random(50, 450));
+  enemy19.vel.set (random(1, -1), random(1, -1 ));
+  
+   enemy20.pos.set (random(10, 750), random(10, 750));
+  enemy20.vel.set (random(3, -3), random(3, -3 ));
+  
+   enemy21.pos.set (random(10, 750), random(10, 750));
+  enemy21.vel.set (random(3, -3), random(3, -3 ));
+  
+   enemy22.pos.set (random(10, 750), random(10, 750));
+  enemy22.vel.set (random(3, -3), random(3, -3 ));
+  
+   enemy23.pos.set (random(10, 750), random(10, 750));
+  enemy23.vel.set (random(3, -3), random(3, -3 ));
+  
+   enemy24.pos.set (random(10, 750), random(10, 750));
+  enemy24.vel.set (random(3, -3), random(3, -3 ));
+  
+   enemy25.pos.set (random(10, 750), random(10, 750));
+  enemy25.vel.set (random(3, -3), random(3, -3 ));
+  
+   enemy26.pos.set (random(10, 750), random(10, 750));
+  enemy26.vel.set (random(3, -3), random(3, -3 ));
+  
+   enemy27.pos.set (random(10, 750), random(10, 750));
+  enemy27.vel.set (random(3, -3), random(3, -3 ));
+  
+   enemy28.pos.set (random(10, 750), random(10, 750));
+  enemy28.vel.set (random(3, -3), random(3, -3 ));
+  
+   enemy29.pos.set (random(10, 750), random(10, 750));
+  enemy29.vel.set (random(3, -3), random(3, -3 ));
+  
+  enemy30.pos.set (random(10, 750), random(10, 750));
+  enemy30.vel.set (random(3, -3), random(3, -3 ));
 
 
 
@@ -100,6 +160,21 @@ void setup() {
            list.add(enemy13);
             list.add(enemy14);
              list.add(enemy15);
+               list.add(enemy16);
+  list.add(enemy17);
+  list.add(enemy18);
+  list.add(enemy19);
+   list.add(enemy20);
+    list.add(enemy21);
+     list.add(enemy22);
+      list.add(enemy23);
+       list.add(enemy24);
+        list.add(enemy25);
+         list.add(enemy26);
+          list.add(enemy27);
+           list.add(enemy28);
+            list.add(enemy29);
+             list.add(enemy30);
 }
 
 void draw() {

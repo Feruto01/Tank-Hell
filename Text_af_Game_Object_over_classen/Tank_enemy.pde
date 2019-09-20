@@ -30,7 +30,7 @@ class TankEnemy extends Tank {
           pssd.normalize();
           PVector paad = pssd.copy().mult(30);
           e.pos.set(enemy.pos.x + paad.x, enemy.pos.y + paad.y);
-          pssd.mult(10.1);
+          pssd.mult(4.1);
           e.vel = pssd;
 
 

@@ -22,7 +22,7 @@ void keyPressed() {
     Skud s = new Skud();
 
     s.pos.set(player.pos.x, player.pos.y);
-    s.vel.set(1, 1);
+    s.vel.set(4, 4);
     s.vel.rotate(player.angle - 3*PI/4);
     PVector p = new PVector(50, 0);
     p.rotate(player.angle - 2*PI/4);
