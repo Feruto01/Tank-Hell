@@ -1,4 +1,3 @@
-
 class GameObject {
   float lifespanSkud  = 700.0;
   float lifespan = 0;
