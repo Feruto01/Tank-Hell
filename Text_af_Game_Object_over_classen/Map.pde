@@ -29,15 +29,18 @@ fill(0,255,0);
   //stroke (255-lifespan);
 //  fill (255-lifespan);
   fill (255,0,0);
-  enemy.pos.set (400, 100);
-  enemy.vel.set (-1, 1);
+  enemy.pos.set (random(50, 450), random(50,450));
+
+  enemy.vel.set (random(2,-2), random(2, -2 ));
 
 
 
   list.add(player);
   list.add(player2);
-  list.add(wall);
+//  list.add(wall);
   list.add(enemy);
+ 
+ 
   //  list.add(skud);
 }
 
