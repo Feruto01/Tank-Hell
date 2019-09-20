@@ -40,7 +40,7 @@ void keyPressed() {
 
 
   }
-  
+
     if (key == '-' || key == '-') {
   /*  lifespanSkud  = 500.0;
     fill(255+lifespanSkud);
