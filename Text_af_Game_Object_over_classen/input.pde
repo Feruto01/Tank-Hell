@@ -43,5 +43,6 @@ void keyPressed() {
 }
 void keyReleased() {
   player.vel.set(0, 0);
+  player2.vel.set(0,0);
 }
 //}
