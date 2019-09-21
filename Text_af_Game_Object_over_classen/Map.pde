@@ -52,7 +52,7 @@ void setup() {
   player.vel.set(0, 0);
 
 
-  enemy.pos.set (random(10, 750), random(10, 750));
+  enemy.pos.set (random(10, 700), random(10, 700));
   enemy.vel.set (random(3, -3), random(3, -3 ));
 
   enemy2.pos.set (random(50, 450), random(50, 450));
@@ -64,40 +64,40 @@ void setup() {
   enemy4.pos.set (random(50, 450), random(50, 450));
   enemy4.vel.set (random(1, -1), random(1, -1 ));
   
-   enemy5.pos.set (random(10, 750), random(10, 750));
+   enemy5.pos.set (random(10, 700), random(10, 700));
   enemy5.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy6.pos.set (random(10, 750), random(10, 750));
+   enemy6.pos.set (random(10, 700), random(10, 700));
   enemy6.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy7.pos.set (random(10, 750), random(10, 750));
+   enemy7.pos.set (random(10, 700), random(10, 700));
   enemy7.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy8.pos.set (random(10, 750), random(10, 750));
+   enemy8.pos.set (random(10, 700), random(10, 700));
   enemy8.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy9.pos.set (random(10, 750), random(10, 750));
+   enemy9.pos.set (random(10, 700), random(10, 700));
   enemy9.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy10.pos.set (random(10, 750), random(10, 750));
+   enemy10.pos.set (random(10, 700), random(10, 700));
   enemy10.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy11.pos.set (random(10, 750), random(10, 750));
+   enemy11.pos.set (random(10, 700), random(10, 700));
   enemy11.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy12.pos.set (random(10, 750), random(10, 750));
+   enemy12.pos.set (random(10, 700), random(10, 700));
   enemy12.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy13.pos.set (random(10, 750), random(10, 750));
+   enemy13.pos.set (random(10, 700), random(10, 700));
   enemy13.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy14.pos.set (random(10, 750), random(10, 750));
+   enemy14.pos.set (random(10, 700), random(10, 700));
   enemy14.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy15.pos.set (random(10, 750), random(10, 750));
+   enemy15.pos.set (random(10, 700), random(10, 700));
   enemy15.vel.set (random(3, -3), random(3, -3 ));
   
-    enemy16.pos.set (random(10, 750), random(10, 750));
+    enemy16.pos.set (random(10, 700), random(10, 700));
   enemy16.vel.set (random(3, -3), random(3, -3 ));
 
   enemy17.pos.set (random(50, 450), random(50, 450));
@@ -109,37 +109,37 @@ void setup() {
   enemy19.pos.set (random(50, 450), random(50, 450));
   enemy19.vel.set (random(1, -1), random(1, -1 ));
   
-   enemy20.pos.set (random(10, 750), random(10, 750));
+   enemy20.pos.set (random(10, 700), random(10, 700));
   enemy20.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy21.pos.set (random(10, 750), random(10, 750));
+   enemy21.pos.set (random(10, 700), random(10, 700));
   enemy21.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy22.pos.set (random(10, 750), random(10, 750));
+   enemy22.pos.set (random(10, 700), random(10, 700));
   enemy22.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy23.pos.set (random(10, 750), random(10, 750));
+   enemy23.pos.set (random(10, 700), random(10, 700));
   enemy23.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy24.pos.set (random(10, 750), random(10, 750));
+   enemy24.pos.set (random(10, 700), random(10, 700));
   enemy24.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy25.pos.set (random(10, 750), random(10, 750));
+   enemy25.pos.set (random(10, 700), random(10, 700));
   enemy25.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy26.pos.set (random(10, 750), random(10, 750));
+   enemy26.pos.set (random(10, 700), random(10, 700));
   enemy26.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy27.pos.set (random(10, 750), random(10, 750));
+   enemy27.pos.set (random(10, 700), random(10, 700));
   enemy27.vel.set (random(3, -3), random(3, -3 ));
-  
-   enemy28.pos.set (random(10, 750), random(10, 750));
+
+   enemy28.pos.set (random(10, 700), random(10, 700));
   enemy28.vel.set (random(3, -3), random(3, -3 ));
   
-   enemy29.pos.set (random(10, 750), random(10, 750));
+   enemy29.pos.set (random(10, 700), random(10, 700));
   enemy29.vel.set (random(3, -3), random(3, -3 ));
   
-  enemy30.pos.set (random(10, 750), random(10, 750));
+  enemy30.pos.set (random(10, 700), random(10, 700));
   enemy30.vel.set (random(3, -3), random(3, -3 ));
 
 
