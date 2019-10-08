@@ -22,7 +22,6 @@ class GameObject {
     pos.add(vel);
 
 
-
     for (int i= 0; i < list.size(); i++) {
       GameObject g2 = list.get(i);
 
