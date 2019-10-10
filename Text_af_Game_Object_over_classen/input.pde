@@ -23,7 +23,7 @@ void keyPressed() {
   }
 
   if (key == 'f' || key == 'F') {
-    
+    Pew.play();
     loadingTime--;
           if(loadingTime >0) return;
           loadingTime = maxLoadTime;

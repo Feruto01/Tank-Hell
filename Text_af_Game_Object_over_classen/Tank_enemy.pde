@@ -45,7 +45,7 @@ class TankEnemy extends Tank {
 
 
           list.add(e);
-          Pew.play();
+         // Pew.play();
         }
       }
     }

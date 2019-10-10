@@ -40,13 +40,24 @@ int level = 0;
 float lifespan = 0;
 
 
+
+  SoundFile Background;
+    SoundFile Pew;
+
+
+
 public void settings() {
   size(800, 800);
 }
 
+
+
+
 void setup() {
-  
+  Background = new SoundFile(this, "Background.mp3");
   Background.play();
+  
+    Pew = new SoundFile(this, "Pew.mp3");
 
  
  ((Tank)player).b=255;
