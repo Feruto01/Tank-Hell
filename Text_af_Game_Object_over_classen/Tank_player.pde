@@ -1,4 +1,5 @@
 class TankPlayer extends Tank {
+     
 
   TankPlayer() {
     r=0;

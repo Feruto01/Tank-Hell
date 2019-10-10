@@ -1,5 +1,7 @@
 class TankEnemy extends Tank {
-
+ int maxLoadTime = 30;
+  int loadingTime = 30;
+  
   TankEnemy() {
 
 
@@ -23,7 +25,14 @@ class TankEnemy extends Tank {
       if (isDead == true) {
         return;
       } else {
-        if (dist(pos.x, pos.y, player.pos.x, player.pos.y)<=150) {
+
+            super.update();
+
+        
+        if (dist(pos.x, pos.y, player.pos.x, player.pos.y)<=200) {
+          loadingTime--;
+          if(loadingTime >0) return;
+          loadingTime = maxLoadTime;
 
           Skud e = new Skud();
           PVector pssd = PVector.sub(player.pos, pos);
@@ -39,7 +48,6 @@ class TankEnemy extends Tank {
       }
 
 
-      super.update();
     }
   }
 }

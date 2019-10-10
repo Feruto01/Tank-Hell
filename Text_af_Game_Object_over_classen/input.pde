@@ -1,4 +1,7 @@
 void keyPressed() {
+     int maxLoadTime = 30;
+  int loadingTime = 30;
+ 
   PVector vel = new PVector (0, -3);
   vel = vel.rotate( player.angle );
 
@@ -18,8 +21,14 @@ void keyPressed() {
     player.angle += 0.1;
 
   }
+
   if (key == 'f' || key == 'F') {
-    Skud s = new Skud();
+    
+    loadingTime--;
+          if(loadingTime >0) return;
+          loadingTime = maxLoadTime;
+    
+        Skud s = new Skud();
 
     s.pos.set(player.pos.x, player.pos.y);
     s.vel.set(4, 4);

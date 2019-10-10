@@ -1,4 +1,5 @@
 class GameObject {
+ 
   float lifespanSkud  = 300.0;
   float lifespan = 0;
   PVector pos = new PVector();

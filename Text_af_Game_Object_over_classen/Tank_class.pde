@@ -31,7 +31,7 @@ class Tank extends GameObject {
 
 
     if (dist(pos.x, pos.y, g2.pos.x, g2.pos.y)<=(collisionRadius+collisionRadius)) {
-
+      if(this instanceof TankEnemy && g2 instanceof TankEnemy) return;
       isDead = true;
        if(this instanceof TankEnemy ) level++;
 
