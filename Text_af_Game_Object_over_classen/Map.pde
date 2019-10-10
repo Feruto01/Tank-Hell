@@ -1,5 +1,6 @@
 import processing.sound.*;
 
+
 GameObject player = new TankPlayer();
 GameObject enemy  = new TankEnemy();
 GameObject enemy2  = new TankEnemy();
@@ -45,14 +46,9 @@ public void settings() {
 
 void setup() {
   
-  SoundFile file;
-  file = new SoundFile(this, "Background.mp3");    //Baggrunds musikken stinker, men virker. Jeg laver om på lyden
-  file.play(); 
+  Background.play();
 
-
-  frameRate(30);
-
-  ((Tank)player).b=255;
+ k)player).b=255;
 
   fill(0, 255, 0);
   player.pos.set(10, 790);
