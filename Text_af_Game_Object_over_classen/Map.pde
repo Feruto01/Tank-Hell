@@ -54,6 +54,7 @@ public void settings() {
 
 
 void setup() {
+  frameRate(30);
   Background = new SoundFile(this, "Background.mp3");
   Background.play();
   
