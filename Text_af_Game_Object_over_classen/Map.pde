@@ -44,10 +44,10 @@ public void settings() {
 }
 
 void setup() {
-
-  /*SoundFile file;
-  file = new SoundFile(this, "");
-  file.play(); */
+  
+  SoundFile file;
+  file = new SoundFile(this, "Background.mp3");    //Baggrunds musikken stinker, men virker. Jeg laver om på lyden
+  file.play(); 
 
 
   frameRate(30);
