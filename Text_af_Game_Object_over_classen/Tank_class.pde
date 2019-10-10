@@ -1,5 +1,6 @@
 class Tank extends GameObject {
-
+ int maxLoadTime = 30;
+  int loadingTime = 30;
   float r, g, b;
 
   void display() {

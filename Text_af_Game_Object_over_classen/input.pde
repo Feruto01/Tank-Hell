@@ -1,6 +1,5 @@
 void keyPressed() {
      int maxLoadTime = 30;
-  int loadingTime = 30;
  
   PVector vel = new PVector (0, -3);
   vel = vel.rotate( player.angle );
@@ -23,10 +22,9 @@ void keyPressed() {
   }
 
   if (key == 'f' || key == 'F') {
-    
-    loadingTime--;
-          if(loadingTime >0) return;
-          loadingTime = maxLoadTime;
+ 
+         if(((TankPlayer)player).loadingTime >0) return;
+          ((TankPlayer)player).loadingTime = maxLoadTime;
     
         Skud s = new Skud();
 

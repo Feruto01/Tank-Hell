@@ -14,7 +14,7 @@ class TankPlayer extends Tank {
 
 
   void update() {
-
+    loadingTime--;
 
     super.update();
   }

@@ -1,6 +1,5 @@
 class TankEnemy extends Tank {
- int maxLoadTime = 30;
-  int loadingTime = 30;
+
   
   TankEnemy() {
 
