@@ -48,7 +48,8 @@ void setup() {
   
   Background.play();
 
- k)player).b=255;
+ 
+ ((Tank)player).b=255;
 
   fill(0, 255, 0);
   player.pos.set(10, 790);
