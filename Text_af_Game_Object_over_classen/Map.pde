@@ -1,5 +1,6 @@
 import processing.sound.*;
 
+
 GameObject player = new TankPlayer();
 GameObject enemy  = new TankEnemy();
 GameObject enemy2  = new TankEnemy();
@@ -39,20 +40,27 @@ int level = 0;
 float lifespan = 0;
 
 
+
+  SoundFile Background;
+    SoundFile Pew;
+
+
+
 public void settings() {
   size(800, 800);
 }
 
+
+
+
 void setup() {
+  Background = new SoundFile(this, "Background.mp3");
+  Background.play();
   
-  SoundFile file;
-  file = new SoundFile(this, "Background.mp3");    //Baggrunds musikken stinker, men virker. Jeg laver om på lyden
-  file.play(); 
+    Pew = new SoundFile(this, "Pew.mp3");
 
-
-  frameRate(30);
-
-  ((Tank)player).b=255;
+ 
+ ((Tank)player).b=255;
 
   fill(0, 255, 0);
   player.pos.set(10, 790);

@@ -1,6 +1,6 @@
 class TankEnemy extends Tank {
 
-  
+
   TankEnemy() {
 
 
@@ -25,13 +25,14 @@ class TankEnemy extends Tank {
         return;
       } else {
 
-            super.update();
+        super.update();
 
-        
+
         if (dist(pos.x, pos.y, player.pos.x, player.pos.y)<=200) {
           loadingTime--;
-          if(loadingTime >0) return;
+          if (loadingTime >0) return;
           loadingTime = maxLoadTime;
+
 
           Skud e = new Skud();
           PVector pssd = PVector.sub(player.pos, pos);
@@ -43,10 +44,9 @@ class TankEnemy extends Tank {
 
 
           list.add(e);
+         // Pew.play();
         }
       }
-
-
     }
   }
 }
