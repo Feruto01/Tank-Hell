@@ -58,7 +58,8 @@ void setup() {
   Background = new SoundFile(this, "Background1.mp3");
   Background.play();
   
-    Pew = new SoundFile(this, "Pew.mp3");
+  Pew = new SoundFile(this, "Pew.mp3");
+  
 
  
  ((Tank)player).b=255;
